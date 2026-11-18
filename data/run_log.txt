@@ -1,0 +1,62 @@
+Branch-level energy localization in three-phase loads: test cases
+MATLAB 24.1.0.2568132 (R2024a) Update 1
+
+[Czarnecki C/L] |residual|/|p| = 5.655e-16
+[Czarnecki C/L] figure: results/figures/fig_p2_czarnecki_CL_illustration.pdf
+[Balanced 3ph RL] max ripple of total power: 5.275e-11 W
+[Balanced 3ph RL] max ripple of total stored energy: 7.105e-14 J
+[Balanced 3ph RL] max |sum dW/dt|: 3.183e-11 W
+[Balanced 3ph RL] figure: results/figures/fig_p2_balanced_3ph_rl_energy.pdf
+[Balanced RL compare] theta = 15.94 deg, P1 = 12103.65 W, Q1 = 3456.79 var
+[Balanced RL compare] sum residual branch: 4.497e-16 ; 1459: 4.397e-16
+[Balanced RL compare] figure: results/figures/fig_p2_balanced_RL_compare.pdf
+[Resistive open] residual p_term - p_R: 1.054e-09 (relative: 1.008e-16)
+[Resistive open] G_e = 1.5397 S; CPC active RMS per phase: 355.662, 355.662, 355.440 A
+[Resistive open] physical phase c current RMS: 0.000e+00 A (zero by construction)
+[Resistive open] q_pq RMS = 173984.58 var (nonzero on a purely resistive load)
+[Resistive open] figure: results/figures/fig_p2_resistive_unbalanced_pq.pdf
+[Nonlinear switched, 3-wire delta] P=38640.4 W, S=41291.5 VA, Q_F=14557.0 VAr
+[Nonlinear switched] residual (p_term - sum p_R) rel: 1.611e-16
+[Nonlinear switched] figure: results/figures/fig_p2_nonlinear_switched.pdf
+[Topology indeterminacy] delta reconstruction residual: 1.512e-16
+[Topology indeterminacy] Wye-virtual: Ra=0.563 Rb=0.470 Rc=0.588 Ohm
+[Topology indeterminacy]              La=2.222 Lb=2.446 Lc=2.633 mH
+[Topology indeterminacy] wye-virtual reconstruction residual: 4.309e-16
+[Topology indeterminacy] mean(pR_delta)=98666.7 W; mean(pR_wye)=98666.7 W
+[Topology indeterminacy] mean(W_delta) profile range 14722.1 W; mean(W_wye) range 32658.7 W
+[Topology indeterminacy] Windowed identification (median of valid window):
+  Delta: G_ab=0.2500, G_bc=0.1667, G_ca=0.2000 S (truth 0.2500, 0.1667, 0.2000)
+  Delta: Gamma_ab=100.00, Gamma_bc=83.33, Gamma_ca=90.91 1/H (truth 100.00, 83.33, 90.91)
+  Wye:   R_a=0.563, R_b=0.470, R_c=0.588 Ohm
+  Wye:   L_a=2.222, L_b=2.446, L_c=2.633 mH
+[Topology indeterminacy] figure: results/figures/fig_p2_threewire_indeterminacy.pdf
+[Fluctuating phase] Jeltsema three-phase extension: V=1 Vrms, I=0.5 Arms, f0=50.0 Hz, f1=10.0 Hz, gamma=pi/2
+[Fluctuating phase] analytic G range [-8.576e-16, 0.6078] S; Gamma [-172.40, 172.40] 1/H; C [-0.001747, 0.001747] F
+[Fluctuating phase] rms(sum Wdot_x)=1.794e-15 W; phase rms Wdot=[0.286 0.286 0.286] W
+[Fluctuating phase] mean(p_pq)=0.7080 W, mean(q_pq)=-8.121e-17 var, rms(q_pq)=1.2113 var
+[Fluctuating phase] 0.10-cycle windows: RL residual 6.008e-03, RC residual 6.008e-03
+[Fluctuating phase] 0.25-cycle windows: RL residual 3.362e-02, RC residual 3.362e-02
+[Fluctuating phase] 0.50-cycle windows: RL residual 1.280e-01, RC residual 1.280e-01
+[Fluctuating phase] figure: results/figures/fig_p2_fluctuating_phase.pdf
+[4-wire] balance residual |p - (p_R + q_L + q_C)|/|p|: a = 1.03e-16, b = 1.18e-16, c = 1.15e-16
+[4-wire] average power P:   a =   6187.5 W, b =   7200.0 W, c =   8629.8 W
+[4-wire] average of p_R:    a =      0.0 W, b =   7200.0 W, c =   8522.6 W
+[4-wire] average of q_L:    a =   6187.5 W, b =     -0.0 W, c =    107.2 W
+[4-wire] average of q_C:    a =     -0.0 W, b =      0.0 W, c =      0.0 W
+[4-wire] phase a: hysteresis loop area = 123.750 J per cycle, i.e. 6187.5 W at 50 Hz (no resistor)
+[4-wire] phase c: conduction 15.33-22.33 ms, peak current 222.83 A, current at turn-off 103.62 A
+[4-wire] phase c: energy left in L_c at turn-off = 2.147 J per cycle (107.4 W), dissipated in R_c through the diode
+[4-wire] rms currents: a = 172.2 A, b = 82.1 A, c = 106.6 A, neutral = 196.9 A
+[4-wire] Corollary 2 on phase b: series equation residual max|R_s i + L_s i' + S_s q - v|/max|v| = 9.51e-14
+[4-wire] Corollary 2 on phase b: max |parallel - series| = 1.82e-12 W (p_R), 1.82e-12 W (q_L), 5.46e-12 W (q_C)
+[4-wire] Corollary 2 on phase b: integral of L_s i i' vs (1/2) Gamma phi^2: max difference 1.44e-06 J (peak energy 14.60 J)
+[4-wire] Corollary 2 on phase b: R_s >= 0 everywhere: 1; L_s changes sign: 1; S_s changes sign: 1
+[4-wire] phase a vs figure curves, relative rms difference: i = 6.15e-03, p = 8.63e-03, q_L = 7.99e-03; P = 6187.5 W (figure 6193.2 W)
+[4-wire] phase b vs figure curves, relative rms difference: i = 2.09e-04, p = 2.91e-04, q_L = 4.19e-04; P = 7200.0 W (figure 7200.0 W)
+[4-wire] phase c vs figure curves, relative rms difference: i = 3.52e-04, p = 4.94e-04, q_L = 3.17e-02; P = 8630.4 W (figure 8630.8 W)
+[4-wire] phase a: the figure curve of i_a has a mean value of 1.05 A, which the symmetric loop does not reproduce
+[4-wire] figure curves of the duality: max |parallel - series| = 1.82e-12 W (p_R), 5.97e-09 W (q_L), 5.89e-09 W (q_C)
+[4-wire] series parameters vs figure curves, median relative difference: R_s = 6.87e-04, L_s = 1.16e-03
+[4-wire] figures: fig_fourwire_powers.pdf, fig_fourwire_duality.pdf
+
+Done.

@@ -1,0 +1,25 @@
+{
+  "title": "Branch-Level Energy Localization in Three-Phase Loads: Code and Data of the Test Cases",
+  "upload_type": "software",
+  "description": "<p>MATLAB code, waveforms, balance residuals and figures of the test cases of the manuscript <em>Branch-Level Energy Localization in Three-Phase Loads: Resolving Indeterminacy in Time-Domain</em>, by F. G. Montoya, F. de Leon, F. M. Arrabal-Campos and A. Alcayde, submitted to IEEE Transactions on Power Delivery.</p>",
+  "creators": [
+    {"name": "Montoya, Francisco G.", "affiliation": "Universidad de Almería"},
+    {"name": "de Leon, Francisco", "affiliation": "New York University"},
+    {"name": "Arrabal-Campos, Francisco M.", "affiliation": "Universidad de Almería"},
+    {"name": "Alcayde, Alfredo", "affiliation": "Universidad de Almería"}
+  ],
+  "keywords": [
+    "energy accounting",
+    "instantaneous power",
+    "load equivalents",
+    "power theory",
+    "three-phase systems",
+    "three-wire systems",
+    "time-domain measurements",
+    "topology indeterminacy"
+  ],
+  "license": "mit",
+  "notes": "Licenses by component: code in matlab/ under the MIT License; data in data/ under CC BY 4.0.",
+  "access_right": "open",
+  "language": "eng"
+}

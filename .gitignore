@@ -1,0 +1,8 @@
+# Regenerated outputs
+results/
+
+# MATLAB and OS files
+*.asv
+*.m~
+*.autosave
+.DS_Store
